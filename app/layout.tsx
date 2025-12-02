@@ -5,8 +5,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "CURSER - Smarter Rentals. Smarter Homes.",
-  description: "A fully integrated AI security system built for property managers, Airbnb hosts, and home enthusiasts.",
+  title: "HomeGuard AI - AI-Driven Distributed Smart Home Security Ecosystem",
+  description: "Next-generation, fully autonomous smart home security ecosystem with enterprise-level intelligence, reliability, and automation. Edge AI, distributed computing, and real-time robotics-grade control in a unified platform.",
 }
 
 export default function RootLayout({
