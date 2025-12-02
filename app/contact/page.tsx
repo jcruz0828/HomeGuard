@@ -28,7 +28,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-neutral-400 text-center mb-12 max-w-2xl mx-auto text-lg">
-              Have questions? We're here to help. Reach out to our team for support, sales inquiries, or technical assistance.
+              Have questions? We&apos;re here to help. Reach out to our team for support, sales inquiries, or technical assistance.
             </p>
           </AnimatedSection>
 
@@ -147,7 +147,7 @@ export default function ContactPage() {
                       >
                         <CheckCircle2 className="h-12 w-12 text-primary-400 mx-auto mb-4" />
                         <h3 className="text-lg font-semibold text-neutral-50 mb-2">Message Sent!</h3>
-                        <p className="text-neutral-400">We'll get back to you within 24 hours.</p>
+                        <p className="text-neutral-400">We&apos;ll get back to you within 24 hours.</p>
                       </motion.div>
                     ) : (
                       <form onSubmit={handleSubmit} className="space-y-4">
@@ -301,7 +301,7 @@ export default function ContactPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-neutral-400 text-center mb-12">
-                Quick answers to common questions. Can't find what you're looking for? Contact us!
+                Quick answers to common questions. Can&apos;t find what you&apos;re looking for? Contact us!
               </p>
               <div className="space-y-4">
                 {[

@@ -21,7 +21,7 @@ export default function SolutionsPage() {
               Solutions for Every Property Type
             </h1>
             <p className="text-neutral-400 text-center mb-12 max-w-3xl mx-auto text-lg">
-              HomeGuard AI provides tailored security solutions designed for your specific needs. Whether you're managing a portfolio of properties, hosting guests, or securing your family home, we have the perfect solution.
+              HomeGuard AI provides tailored security solutions designed for your specific needs. Whether you&apos;re managing a portfolio of properties, hosting guests, or securing your family home, we have the perfect solution.
             </p>
           </AnimatedSection>
 
