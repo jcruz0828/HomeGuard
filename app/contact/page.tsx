@@ -33,7 +33,7 @@ export default function ContactPage() {
           </AnimatedSection>
 
           {/* Contact Methods */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-12 sm:mb-16 px-4">
             <AnimatedCard delay={0.1}>
               <Card className="bg-neutral-800 border-primary-500/20 hover:border-primary-500 transition-all duration-300 h-full">
                 <CardHeader className="text-center">
@@ -126,7 +126,7 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Form and Info Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-16 px-4">
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <AnimatedCard delay={0.5}>

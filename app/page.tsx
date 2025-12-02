@@ -36,7 +36,7 @@ export default function Home() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="relative py-32 md:py-40 bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-center overflow-hidden">
+      <section className="relative py-20 sm:py-28 md:py-32 lg:py-40 bg-gradient-to-b from-neutral-950 via-neutral-900 to-neutral-950 text-center overflow-hidden">
         {/* Animated gradient orbs */}
         <motion.div
           className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"
@@ -114,7 +114,7 @@ export default function Home() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-5xl md:text-6xl lg:text-8xl font-bold mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight px-2"
           >
             <span className="bg-gradient-to-r from-primary-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]">
               AI-Driven Distributed
@@ -129,7 +129,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-6 text-lg md:text-xl lg:text-2xl text-neutral-300 max-w-4xl mx-auto mb-10 leading-relaxed"
+            className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl text-neutral-300 max-w-4xl mx-auto mb-8 sm:mb-10 leading-relaxed px-4"
           >
             Next-generation, fully autonomous smart home security ecosystem with{" "}
             <span className="text-primary-400 font-semibold">enterprise-level intelligence</span>,{" "}
@@ -147,7 +147,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button className="bg-gradient-to-r from-primary-500 to-blue-600 text-white hover:from-primary-400 hover:to-blue-500 px-10 py-7 text-lg font-semibold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-all duration-300">
+              <Button className="bg-gradient-to-r from-primary-500 to-blue-600 text-white hover:from-primary-400 hover:to-blue-500 px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 text-base sm:text-lg font-semibold shadow-[0_0_30px_rgba(59,130,246,0.5)] hover:shadow-[0_0_40px_rgba(59,130,246,0.7)] transition-all duration-300 w-full sm:w-auto">
                 Explore Products
               </Button>
             </motion.div>
@@ -155,7 +155,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Button variant="outline" className="border-primary-500/50 text-primary-400 hover:bg-primary-500/10 hover:border-primary-400 px-10 py-7 text-lg font-semibold backdrop-blur-sm">
+              <Button variant="outline" className="border-primary-500/50 text-primary-400 hover:bg-primary-500/10 hover:border-primary-400 px-6 sm:px-8 md:px-10 py-5 sm:py-6 md:py-7 text-base sm:text-lg font-semibold backdrop-blur-sm w-full sm:w-auto">
                 Watch Demo
               </Button>
             </motion.div>
@@ -166,7 +166,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
-            className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
+            className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-3xl mx-auto px-4"
           >
             {[
               { label: "AI Processing", value: "Real-Time", icon: Brain },
@@ -179,7 +179,7 @@ export default function Home() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8 + index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="bg-neutral-900/50 backdrop-blur-sm border border-primary-500/20 rounded-xl p-6 hover:border-primary-500/50 transition-all duration-300"
+                className="bg-neutral-900/50 backdrop-blur-sm border border-primary-500/20 rounded-xl p-4 sm:p-6 hover:border-primary-500/50 transition-all duration-300"
               >
                 <stat.icon className="h-8 w-8 text-primary-400 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-primary-400 mb-1">{stat.value}</div>
@@ -191,13 +191,13 @@ export default function Home() {
       </section>
 
       {/* Solutions Section */}
-      <section className="py-20 bg-neutral-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-neutral-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-neutral-50 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-50 text-center mb-4 px-4">
               Built for Modern Property Owners
             </h2>
-            <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-neutral-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 text-sm sm:text-base">
               HomeGuard AI delivers intelligent security solutions tailored to your specific needs, whether you&apos;re managing multiple properties, hosting guests, or securing your personal residence.
             </p>
           </AnimatedSection>
@@ -258,13 +258,13 @@ export default function Home() {
       </section>
 
       {/* App Features Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-12 sm:py-16 md:py-20 bg-neutral-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-neutral-50 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-50 text-center mb-4 px-4">
               HomeGuard Mobile & Web App Features
             </h2>
-            <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-neutral-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 text-sm sm:text-base">
               Comprehensive mobile and web applications providing real-time monitoring, intelligent alerts, and complete system control from anywhere in the world.
             </p>
           </AnimatedSection>
@@ -427,13 +427,13 @@ export default function Home() {
       </section>
 
       {/* Featured Products Section */}
-      <section className="py-20 bg-neutral-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-neutral-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-neutral-50 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-50 text-center mb-4 px-4">
               Distributed Hardware Ecosystem
             </h2>
-            <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-neutral-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 text-sm sm:text-base">
               HomeGuard AI leverages specialized hardware nodes, each optimized for specific roles in the security ecosystem. From AI inference to real-time motor control, every component is purpose-built for reliability and performance.
             </p>
           </AnimatedSection>
@@ -598,13 +598,13 @@ export default function Home() {
       </section>
 
       {/* Technology Stack Section */}
-      <section className="py-20 bg-neutral-950">
+      <section className="py-12 sm:py-16 md:py-20 bg-neutral-950">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-neutral-50 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-50 text-center mb-4 px-4">
               Advanced Technology Stack
             </h2>
-            <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-neutral-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 text-sm sm:text-base">
               HomeGuard AI leverages industry-standard hardware components optimized for AI inference, real-time processing, and distributed computing. Our architecture ensures reliability, performance, and scalability.
             </p>
           </AnimatedSection>
@@ -657,13 +657,13 @@ export default function Home() {
       </section>
 
       {/* Key Features Section */}
-      <section className="py-20 bg-neutral-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-neutral-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <h2 className="text-4xl font-bold text-neutral-50 text-center mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-neutral-50 text-center mb-4 px-4">
               Key System Features
             </h2>
-            <p className="text-center text-neutral-400 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-neutral-400 mb-8 sm:mb-12 max-w-2xl mx-auto px-4 text-sm sm:text-base">
               HomeGuard AI represents the evolution of home security—moving from simple alerts to intelligent situational awareness.
             </p>
           </AnimatedSection>
@@ -710,7 +710,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-b from-neutral-950 to-neutral-900">
+      <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-b from-neutral-950 to-neutral-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -718,10 +718,10 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-primary-500 mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-500 mb-4 sm:mb-6 px-4">
               Upgrade Your Property Security
             </h2>
-            <p className="text-lg text-neutral-400 max-w-2xl mx-auto mb-8">
+            <p className="text-base sm:text-lg text-neutral-400 max-w-2xl mx-auto mb-6 sm:mb-8 px-4">
               Experience the future of smart property management with HomeGuard AI&apos;s integrated AI security ecosystem. Enterprise-level intelligence, reliability, and automation for your home.
             </p>
             <motion.div

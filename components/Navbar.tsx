@@ -19,16 +19,17 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
+          <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group">
             <motion.div
               whileHover={{ rotate: 360, scale: 1.1 }}
               transition={{ duration: 0.5 }}
               className="p-1.5 rounded-lg bg-gradient-to-br from-primary-500/20 to-blue-500/20 group-hover:from-primary-500/30 group-hover:to-blue-500/30 transition-all duration-300"
             >
-              <Shield className="h-6 w-6 text-primary-400" />
+              <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-primary-400" />
             </motion.div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]">
-              HomeGuard AI
+            <span className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-primary-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+              <span className="hidden sm:inline">HomeGuard AI</span>
+              <span className="sm:hidden">HGA</span>
             </span>
           </Link>
 
@@ -58,7 +59,7 @@ export function Navbar() {
             >
               Contact
             </Link>
-            <Button className="bg-primary-500 text-white hover:bg-primary-400">
+            <Button className="bg-primary-500 text-white hover:bg-primary-400 text-sm sm:text-base px-4 sm:px-6">
               Request Demo
             </Button>
           </div>
@@ -66,7 +67,7 @@ export function Navbar() {
           {/* Mobile Menu */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon">
+              <Button variant="ghost" size="icon" className="min-w-[44px] min-h-[44px]">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>

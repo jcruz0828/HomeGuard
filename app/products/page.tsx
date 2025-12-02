@@ -26,7 +26,7 @@ export default function ProductsPage() {
           </AnimatedSection>
 
           {/* Subscription Packages */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20 max-w-6xl mx-auto px-4">
             {/* Basic Plan */}
             <AnimatedCard delay={0.1}>
               <Card className="bg-neutral-900 border-primary-500/20 hover:border-primary-500 transition-all duration-300 h-full flex flex-col">
@@ -36,8 +36,8 @@ export default function ProductsPage() {
                     <Badge className="bg-primary-500/20 text-primary-400">Starter</Badge>
                   </div>
                   <div className="mb-6">
-                    <span className="text-4xl font-bold text-primary-400">$99</span>
-                    <span className="text-neutral-400 ml-2">/month</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-primary-400">$99</span>
+                    <span className="text-neutral-400 ml-2 text-sm sm:text-base">/month</span>
                   </div>
                   <CardDescription className="text-neutral-300 mb-6">
                     Perfect for single-family homes and small properties
@@ -84,8 +84,8 @@ export default function ProductsPage() {
                     <Sparkles className="h-5 w-5 text-primary-400" />
                   </div>
                   <div className="mb-6">
-                    <span className="text-4xl font-bold text-primary-400">$249</span>
-                    <span className="text-neutral-400 ml-2">/month</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-primary-400">$249</span>
+                    <span className="text-neutral-400 ml-2 text-sm sm:text-base">/month</span>
                   </div>
                   <CardDescription className="text-neutral-300 mb-6">
                     Ideal for property managers and Airbnb hosts
@@ -131,8 +131,8 @@ export default function ProductsPage() {
                     <Badge className="bg-primary-500/20 text-primary-400">Custom</Badge>
                   </div>
                   <div className="mb-6">
-                    <span className="text-4xl font-bold text-primary-400">Custom</span>
-                    <span className="text-neutral-400 ml-2">pricing</span>
+                    <span className="text-3xl sm:text-4xl font-bold text-primary-400">Custom</span>
+                    <span className="text-neutral-400 ml-2 text-sm sm:text-base">pricing</span>
                   </div>
                   <CardDescription className="text-neutral-300 mb-6">
                     For large portfolios and advanced requirements
@@ -182,7 +182,7 @@ export default function ProductsPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 px-4">
             <ProductCard
               icon={Camera}
               title="Additional Camera Node"

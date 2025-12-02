@@ -26,7 +26,7 @@ export default function SolutionsPage() {
           </AnimatedSection>
 
           {/* Main Solutions */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-20 px-4">
             <AnimatedCard delay={0.1}>
               <Card className="bg-neutral-800 border-primary-500/20 hover:border-primary-500 transition-all duration-300 h-full flex flex-col">
                 <CardHeader>
@@ -187,7 +187,7 @@ export default function SolutionsPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-20 max-w-6xl mx-auto px-4">
             {[
               { icon: Brain, title: "AI-Powered", desc: "Advanced face recognition, object detection, and intelligent analysis" },
               { icon: Camera, title: "Comprehensive Coverage", desc: "Multi-camera network with edge AI processing" },
